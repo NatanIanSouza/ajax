@@ -3,9 +3,11 @@
     $NOME = $_REQUEST['NOME'];
     $DATA_NASC = $_REQUEST['DATA_NASC'];
     $BEBIDA = $_REQUEST['BEBIDA'];
-    $ANO = 2022;
+    $ANO = date("Y");
 
-    $IDADE = $ANO - ("Y", $DATA_NASC);
+    $DATA_NASC = date("Y", strtotime($DATA_NASC));
+
+    $IDADE = $ANO - $DATA_NASC;
 
     if(empty($NOME)){
         $dados = array(

@@ -21,7 +21,7 @@ $(document).ready(function() {
                                 ${dados.mensagem}
                             </h1>
                         </div>
-                        <div class="mb-5">
+                        <div class="justify-content-center mb-5">
                             <img src="../../img/${dados.tipo}" class="img-fluid">
                         </div>
                         
